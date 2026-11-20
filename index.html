@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffcb05" />
+  <meta name="description" content="GO! — spontaniczne akcje w Twojej okolicy. Znajdź ludzi na kawę, rower, bieganie lub planszówki. Wybierz akcję i ruszaj!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="GO! — Wychodzisz?" />
+  <meta property="og:description" content="Zobacz, co dzieje się w pobliżu. Dołącz do akcji. Spotkaj się naprawdę." />
+  <!-- Po publikacji można dodać pełny adres HTTPS do assets/og-cover.png jako og:image. -->
+  <title>GO! — Wychodzisz?</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="GO! — strona główna"><img src="assets/logo-go.png" alt="" width="64" height="64" /></a>
+      <nav class="desktop-nav" aria-label="Menu główne">
+        <a href="#jak-dziala">Jak to działa</a>
+        <a href="#aplikacja">Aplikacja</a>
+        <a href="#testy">Testy</a>
+      </nav>
+      <a class="header-cta" href="#testy">Testy GO! <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Otwórz menu" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Menu mobilne" hidden>
+      <a href="#jak-dziala">Jak to działa</a>
+      <a href="#aplikacja">Zobacz aplikację</a>
+      <a href="#testy">Testy GO!</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="sparkle" aria-hidden="true">✳</span> spontaniczne akcje w Twojej okolicy</p>
+          <h1 id="hero-title">Wychodzisz<span class="question-mark">?</span><br /><span class="hero-highlight"><img src="assets/logo-go.png" alt="GO!" width="168" height="168" /></span></h1>
+          <p class="hero-intro">Kawa, rower, bieganie, planszówki? Znajdź ludzi, którzy też chcą coś zrobić. <strong>Wybierz akcję i ruszaj.</strong></p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#jak-dziala">Zobacz, jak to działa <span aria-hidden="true">↗</span></a>
+            <a class="button-link" href="#aplikacja">Zajrzyj do środka <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-status"><span class="status-indicator" aria-hidden="true"></span><span>GO! na Androida <strong>·</strong> testy zewnętrzne wkrótce</span></div>
+        </div>
+
+        <div class="hero-stage phase-browse" id="hero-stage" aria-label="Animowana prezentacja idei GO!: wybierz kategorię, dołącz do akcji i spotkaj ludzi">
+          <div class="stage-blob" aria-hidden="true"></div>
+          <div class="stage-burst burst-a" aria-hidden="true">✳</div>
+          <div class="stage-burst burst-b" aria-hidden="true">✳</div>
+          <span class="stage-caption">OD POMYSŁU DO SPOTKANIA</span>
+
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <div class="phone-status" aria-hidden="true"><span>9:41</span><span>●●● ▰</span></div>
+              <div class="phone-head"><span class="app-brand"><img src="assets/logo-go.png" alt="GO!" width="48" height="48" /></span><span class="app-filter-badge">Filtry <b>1</b></span></div>
+              <div class="phone-main">
+                <h2>Akcje w okolicy</h2>
+                <p class="phone-subtitle">Sprawdź, co dzieje się teraz w pobliżu.</p>
+                <p class="phone-location">📍 Zielona Góra&nbsp; · &nbsp;5 km <span>›</span></p>
+                <div class="category-chips" role="group" aria-label="Wybierz przykładową kategorię">
+                  <button type="button" class="category-chip" data-category="run" aria-pressed="false"><span>🏃</span> Bieganie</button>
+                  <button type="button" class="category-chip" data-category="bike" aria-pressed="false"><span>🚲</span> Rower</button>
+                  <button type="button" class="category-chip" data-category="coffee" aria-pressed="false"><span>☕</span> Kawa</button>
+                  <button type="button" class="category-chip" data-category="games" aria-pressed="false"><span>🎲</span> Planszówki</button>
+                </div>
+                <div class="app-list-heading"><h3>Aktywne akcje</h3><small>Przykład</small></div>
+                <div class="demo-event" id="demo-event">
+                  <div class="event-top"><div class="event-emoji" id="event-emoji">☕</div><div class="event-content"><div class="event-type" id="event-type">KAWA</div><h4 id="event-name">Kawa bez okazji</h4><p id="event-meta">Dzisiaj · 17:30</p><p id="event-address">Centrum · 1,6 km</p><strong class="event-host">Organizator: test</strong></div><span class="event-count" id="event-count">2/4</span></div>
+                  <button type="button" id="demo-join" class="event-join">Zobacz szczegóły <span aria-hidden="true">→</span></button>
+                </div>
+                <p class="demo-note">Interaktywny podgląd · dane przykładowe</p>
+              </div>
+              <div class="phone-tabs" aria-hidden="true">
+                <span class="selected"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01" stroke-width="3" stroke-linecap="round"/></svg>Lista</span>
+                <span><svg viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16M15 5v16"/></svg>Mapa</span>
+                <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>Dodaj</span>
+                <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>Moje</span>
+                <span><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3-7 8-7s8 3 8 7"/></svg>Profil</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="scene-after" aria-hidden="true">
+            <span class="scene-annotation">…i jesteś w akcji!</span>
+            <div class="scene-illustration">
+              <img src="assets/coffee-meet.svg" alt="" width="360" height="295" />
+            </div>
+          </div>
+          <div class="go-splash" aria-hidden="true"><img src="assets/logo-go.png" alt="" width="124" height="124" /></div>
+          <div class="story-controls">
+            <span id="story-status">1/3 &nbsp; Zobacz, co się dzieje</span>
+            <button id="story-replay" type="button" aria-label="Odtwórz animację od początku" title="Odtwórz animację od początku">↻ <span>Powtórz</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="category-ribbon" aria-hidden="true"><div class="ribbon-track"><span>☕ Kawa?</span><span>🚲 Rower?</span><span>🎲 Planszówki?</span><span>🏃 Bieganie?</span><span>⚽ Sport?</span><span>✨ Cokolwiek!</span><span>☕ Kawa?</span><span>🚲 Rower?</span><span>🎲 Planszówki?</span><span>🏃 Bieganie?</span><span>⚽ Sport?</span><span>✨ Cokolwiek!</span></div></div>
+
+    <section class="section section-how" id="jak-dziala" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-header"><div><div class="kicker">TO PROSTE</div><h2 id="how-title">Nie planuj tygodniami.<br /><span>Po prostu działaj.</span></h2></div><p>GO! łączy ludzi wokół konkretnych pomysłów. Bez długich ustaleń na grupowym czacie.</p></div>
+        <div class="steps">
+          <article class="step"><div class="step-number">01 <span>⌕</span></div><div class="step-art">📍 <span class="step-float">5 km</span></div><h3>Sprawdź okolicę</h3><p>Zobacz akcje na liście albo na mapie. Wybierz coś, na co właśnie masz ochotę.</p></article>
+          <article class="step"><div class="step-number">02 <span>＋</span></div><div class="step-art">☕ <span class="step-float">+ Dołącz</span></div><h3>Wybierz lub zaproś</h3><p>Dołącz do akcji albo stwórz własną. Podaj miejsce, godzinę i gotowe.</p></article>
+          <article class="step"><div class="step-number">03 <span>↗</span></div><div class="step-art step-art-yellow"><img class="step-logo" src="assets/logo-go.png" alt="" width="84" height="84" /><span class="step-float">✓</span></div><h3>Wyjdź z domu</h3><p>Spotkajcie się naprawdę. Najlepsza część GO! dzieje się poza telefonem.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-app" id="aplikacja" aria-labelledby="app-title">
+      <div class="container">
+        <div class="section-header"><div><div class="kicker">GO! OD ŚRODKA</div><h2 id="app-title">Zobacz, jak wygląda<br /><span>prawdziwa aplikacja.</span></h2></div><p>Prosty interfejs, szybkie decyzje. Tak wyglądają ekrany rozwijanej wersji na Androida.</p></div>
+        <div class="screens">
+          <article class="screen-panel"><div class="screen-phone"><img src="assets/screen-actions.webp" alt="Ekran Akcje w okolicy w aplikacji GO!, z listą spotkań i filtrami" loading="eager" width="389" height="822" /></div><div class="screen-label"><span>01 / ZNAJDŹ</span><h3>Akcje w pobliżu</h3><p>Lista i szybkie filtry</p></div></article>
+          <article class="screen-panel"><div class="screen-phone"><img src="assets/screen-map.webp" alt="Mapa akcji w aplikacji GO! z zaznaczonymi lokalizacjami" loading="eager" width="389" height="822" /></div><div class="screen-label"><span>02 / SPRAWDŹ</span><h3>Wybierz miejsce</h3><p>Wszystko na mapie</p></div></article>
+          <article class="screen-panel"><div class="screen-phone"><img src="assets/screen-details.webp" alt="Szczegóły wydarzenia w aplikacji GO! z przyciskiem dołączenia" loading="eager" width="389" height="822" /></div><div class="screen-label"><span>03 / DOŁĄCZ</span><h3>Jeden konkretny plan</h3><p>Miejsce, godzina, uczestnicy</p></div></article>
+        </div>
+        <p class="image-disclaimer">Zrzuty z wersji rozwojowej aplikacji. Widoczne akcje i konta są testowe; wygląd może się zmienić.</p>
+      </div>
+    </section>
+
+    <section class="section section-ideas" aria-labelledby="ideas-title">
+      <div class="container">
+        <div class="section-header"><div><div class="kicker">NA CO MASZ OCHOTĘ?</div><h2 id="ideas-title">Małe pomysły.<br /><span>Fajne spotkania.</span></h2></div><p>Nie potrzebujesz specjalnej okazji. Wystarczy pomysł i ktoś, kto też mówi „chodźmy”.</p></div>
+        <div class="ideas-grid">
+          <div class="idea idea-coffee"><span class="idea-no">01</span><div class="idea-emoji">☕</div><h3>Kawa?</h3><p>Godzina rozmowy zamiast kolejnej godziny scrollowania.</p></div>
+          <div class="idea idea-bike"><span class="idea-no">02</span><div class="idea-emoji">🚲</div><h3>Rower?</h3><p>Krótka trasa po pracy? Z kimś zawsze raźniej.</p></div>
+          <div class="idea idea-games"><span class="idea-no">03</span><div class="idea-emoji">🎲</div><h3>Planszówki?</h3><p>Brakuje jednej osoby do stołu? Znajdź ją.</p></div>
+          <div class="idea idea-run"><span class="idea-no">04</span><div class="idea-emoji">🏃</div><h3>Bieganie?</h3><p>Wybierz tempo, godzinę i ruszajcie razem.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testing" id="testy" aria-labelledby="test-title">
+      <div class="container testing-inner"><div><div class="kicker kicker-dark">NIEDŁUGO STARTUJEMY</div><h2 id="test-title">Dołączysz do<br />ekipy GO<span>!</span>?</h2><p>Przygotowujemy zewnętrzne testy aplikacji na Androidzie. Najpierw sprawdzimy ją w małej grupie i zbierzemy prawdziwe opinie.</p><div class="test-state"><span class="state-dot" aria-hidden="true"></span><span id="test-status">Testy wkrótce</span></div><a id="join-tests" class="button button-dark" href="#testy" hidden>Przejdź do testów <span aria-hidden="true">↗</span></a><p class="test-info" id="test-info">Gdy otworzymy testy, pojawi się tutaj link do udziału.</p></div><div class="testing-sticker" aria-hidden="true"><span>Widzimy się<br />poza ekranem!</span><strong><img src="assets/logo-go.png" alt="" width="168" height="168" /></strong><i>✳</i></div></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="#top" aria-label="GO! — wróć na górę"><img src="assets/logo-go.png" alt="" width="64" height="64" /></a><p>Wybierz akcję. Spotkaj ludzi. GO!</p><span>© <span id="year">2026</span> GO! · Zrobione, żeby wyjść z domu.</span></div></footer>
+</body>
+</html>
