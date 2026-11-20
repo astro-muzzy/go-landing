@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="310" viewBox="0 0 420 310" fill="none">
+  <!-- Three people actually meet for coffee, in the simple light/yellow illustration style of GO! -->
+  <ellipse cx="211" cy="285" rx="195" ry="18" fill="#D6D8D4" opacity=".35"/>
+  <path d="M22 270C35 216 65 190 94 215C117 166 148 171 174 234C185 253 193 260 205 270H22Z" fill="#B9D5A1"/>
+  <path d="M305 271C327 223 352 224 363 244C375 201 397 207 416 251V271H305Z" fill="#B5D59D"/>
+  <!-- Characters: yellow hoodie -->
+  <path d="M82 256C79 212 91 170 130 166C169 166 186 213 182 256" fill="#FFCB05" stroke="#202538" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M98 174C95 196 101 223 104 241" stroke="#E9AE00" stroke-width="7" stroke-linecap="round"/>
+  <path d="M145 166C157 177 158 188 154 195" stroke="#F6B700" stroke-width="6" stroke-linecap="round"/>
+  <path d="M106 126C101 100 113 78 141 75C171 73 181 99 178 127C175 149 160 166 141 167C119 167 108 151 106 126Z" fill="#F1BD8D" stroke="#202538" stroke-width="5"/>
+  <path d="M104 115C85 103 103 82 110 83C110 64 131 57 143 66C166 54 181 75 178 87C195 101 180 122 168 118C166 109 155 102 144 105C132 91 124 101 121 117L104 115Z" fill="#202538"/>
+  <circle cx="129" cy="127" r="3" fill="#202538"/><circle cx="156" cy="127" r="3" fill="#202538"/>
+  <path d="M136 143Q144 152 152 141" stroke="#202538" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M168 204L196 220" stroke="#202538" stroke-width="17" stroke-linecap="round"/><circle cx="204" cy="223" r="10" fill="#F1BD8D" stroke="#202538" stroke-width="3"/>
+  <!-- Friend in cream top -->
+  <path d="M261 256C257 215 275 180 302 180C341 178 354 211 351 256" fill="#FCFDFE" stroke="#202538" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M272 127C272 103 287 83 310 83C332 83 346 105 344 128C343 154 328 171 309 171C289 171 273 153 272 127Z" fill="#EAB68B" stroke="#202538" stroke-width="5"/>
+  <path d="M270 133C257 122 264 112 271 107C265 92 280 84 287 86C285 64 304 57 313 68C328 58 345 72 344 90C358 94 355 111 345 117C340 101 330 98 317 97C306 113 284 114 270 111Z" fill="#202538"/>
+  <circle cx="297" cy="130" r="3" fill="#202538"/><circle cx="322" cy="130" r="3" fill="#202538"/>
+  <path d="M299 145Q308 155 319 144" stroke="#202538" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M281 216L252 227" stroke="#202538" stroke-width="17" stroke-linecap="round"/><circle cx="241" cy="228" r="10" fill="#EAB68B" stroke="#202538" stroke-width="3"/>
+  <!-- Table and two steaming coffees -->
+  <ellipse cx="211" cy="238" rx="108" ry="21" fill="#E6EBEB" stroke="#202538" stroke-width="5"/>
+  <path d="M208 245V285" stroke="#202538" stroke-width="12" stroke-linecap="round"/><path d="M176 289H241" stroke="#202538" stroke-width="9" stroke-linecap="round"/>
+  <path d="M161 210H183L181 227C181 230 165 230 164 225L161 210Z" fill="white" stroke="#202538" stroke-width="3"/>
+  <path d="M181 211C196 206 195 226 181 225" stroke="#202538" stroke-width="3"/>
+  <path d="M238 208H261L259 224C257 228 242 228 240 224L238 208Z" fill="white" stroke="#202538" stroke-width="3"/>
+  <path d="M261 210C273 209 274 224 260 223" stroke="#202538" stroke-width="3"/>
+  <path d="M172 201Q164 191 173 182M248 199Q242 191 250 182" stroke="#E7AA00" stroke-width="3" stroke-linecap="round"/>
+  <!-- Happy accents -->
+  <path d="M203 119L206 98M219 124L232 110M188 120L178 111" stroke="#FFCB05" stroke-width="7" stroke-linecap="round"/>
+  <path d="M378 162L389 153M383 179L399 179" stroke="#FFCB05" stroke-width="6" stroke-linecap="round"/>
+</svg>
