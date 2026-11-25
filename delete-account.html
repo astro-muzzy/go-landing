@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Jak zgłosić usunięcie konta i powiązanych danych w aplikacji GO!">
+  <title>Usunięcie konta i danych — GO!</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .deletion-page { min-height: 100vh; background: #f8f9fb; color: #151b2a; }
+    .deletion-bar { background:#fff; border-bottom:1px solid #eceef2; }
+    .deletion-bar-inner { width:min(850px, calc(100% - 40px)); min-height:82px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .deletion-brand { display:flex; align-items:center; gap:12px; font-size:19px; font-weight:900; }
+    .deletion-brand img { width:52px; height:52px; object-fit:contain; }
+    .deletion-back { font-size:14px; font-weight:700; color:#535966; text-decoration:underline; text-underline-offset:3px; }
+    .deletion-content { width:min(850px, calc(100% - 40px)); margin:56px auto 72px; }
+    .deletion-kicker { color:#997400; font-size:12px; font-weight:900; letter-spacing:1.8px; text-transform:uppercase; margin:0 0 12px; }
+    .deletion-content h1 { font-size:clamp(32px,5vw,48px); line-height:1.12; letter-spacing:-.04em; margin:0 0 18px; }
+    .deletion-lead { font-size:17px; line-height:1.75; max-width:710px; color:#555e6d; margin:0 0 30px; }
+    .deletion-card { background:#fff; border:1px solid #e1e4e9; border-radius:22px; padding:30px 34px; margin-bottom:20px; }
+    .deletion-card h2 { margin:0 0 17px; font-size:22px; letter-spacing:-.02em; }
+    .deletion-card p, .deletion-card li { font-size:15px; line-height:1.75; color:#404754; }
+    .deletion-card ol { margin:0 0 20px; padding-left:23px; }
+    .deletion-card li { padding-left:4px; margin:0 0 9px; }
+    .deletion-action { display:inline-flex; align-items:center; justify-content:center; background:#ffca05; color:#151b2a; border-radius:13px; min-height:50px; padding:13px 21px; font-size:15px; font-weight:900; text-decoration:none; }
+    .deletion-action:hover { background:#efb900; }
+    .deletion-email { overflow-wrap:anywhere; font-weight:700; color:#151b2a; }
+    .deletion-note { color:#69717e !important; font-size:13px !important; margin:14px 0 0; }
+    .deletion-footer { text-align:center; color:#68707c; font-size:13px; padding:4px 20px 35px; }
+    .deletion-footer a { text-decoration:underline; text-underline-offset:3px; }
+    .deletion-back:focus-visible, .deletion-action:focus-visible, .deletion-footer a:focus-visible { outline:3px solid #d69f00; outline-offset:4px; }
+    @media (max-width:600px) { .deletion-bar-inner,.deletion-content { width:calc(100% - 32px); } .deletion-content { margin:36px auto 45px; } .deletion-card { padding:23px 19px; border-radius:17px; } .deletion-brand img { width:44px; height:44px; } .deletion-lead { font-size:15px; } }
+  </style>
+</head>
+<body class="deletion-page">
+  <a class="skip-link" href="#content">Przejdź do treści</a>
+  <header class="deletion-bar">
+    <div class="deletion-bar-inner">
+      <a class="deletion-brand" href="index.html" aria-label="GO! — strona główna">
+        <img src="assets/logo-go.png" alt="" width="52" height="52"> <span>GO!</span>
+      </a>
+      <a class="deletion-back" href="index.html">← Strona główna</a>
+    </div>
+  </header>
+
+  <main id="content" class="deletion-content">
+    <p class="deletion-kicker">GO! Social · Prywatność</p>
+    <h1>Usunięcie konta i danych GO!</h1>
+    <p class="deletion-lead">Możesz poprosić o usunięcie konta w aplikacji GO! oraz związanych z nim danych osobowych, także jeśli nie masz już zainstalowanej aplikacji.</p>
+
+    <section class="deletion-card" aria-labelledby="request-title">
+      <h2 id="request-title">Jak zgłosić usunięcie konta?</h2>
+      <ol>
+        <li>Wyślij wiadomość na <a class="deletion-email" href="mailto:join.goapp@gmail.com?subject=Usuni%C4%99cie%20konta%20GO%21">join.goapp@gmail.com</a>, najlepiej z adresu e-mail powiązanego z Twoim kontem GO!.</li>
+        <li>W temacie wpisz <strong>Usunięcie konta GO!</strong>. Nie podawaj hasła ani żadnych kodów logowania.</li>
+        <li>W razie potrzeby potwierdzimy, że zgłoszenie pochodzi od właściciela konta, i poinformujemy Cię o realizacji żądania.</li>
+      </ol>
+      <a class="deletion-action" href="mailto:join.goapp@gmail.com?subject=Usuni%C4%99cie%20konta%20GO%21">Wyślij prośbę o usunięcie konta</a>
+      <p class="deletion-note">Przycisk otwiera domyślną aplikację pocztową. Jeżeli nie działa, wyślij wiadomość ręcznie na adres podany powyżej.</p>
+    </section>
+
+    <section class="deletion-card" aria-labelledby="data-title">
+      <h2 id="data-title">Jakich danych dotyczy żądanie?</h2>
+      <p>Żądanie obejmuje konto GO!, dane profilu i dane osobowe powiązane z kontem, w tym informacje o aktywnościach i uczestnictwie oraz dane potrzebne do obsługi powiadomień. Zakres i sposób usunięcia ustalamy z uwzględnieniem powiązań między danymi oraz obowiązujących przepisów.</p>
+      <p>Niektóre informacje mogą być przechowywane dłużej, gdy istnieje ku temu odpowiednia podstawa prawna, np. obowiązek wynikający z przepisów lub konieczność dochodzenia lub obrony roszczeń. W takim przypadku poinformujemy Cię o zakresie dalszego przechowywania.</p>
+    </section>
+
+    <section class="deletion-card" aria-labelledby="time-title">
+      <h2 id="time-title">Co dzieje się po wysłaniu zgłoszenia?</h2>
+      <p>Rozpatrujemy zgłoszenia bez zbędnej zwłoki. Na żądania dotyczące praw wynikających z RODO odpowiadamy co do zasady w ciągu miesiąca od ich otrzymania, chyba że przepisy dopuszczają przedłużenie tego terminu.</p>
+      <p>Samo odinstalowanie GO! nie usuwa konta ani danych zapisanych w usłudze.</p>
+    </section>
+  </main>
+  <footer class="deletion-footer">
+    <a href="privacy.html">Polityka prywatności</a> · <a href="index.html">GO! — strona główna</a><br>
+    © 2026 GO! Social
+  </footer>
+</body>
+</html>
